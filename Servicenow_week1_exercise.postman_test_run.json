@@ -1,0 +1,177 @@
+{
+	"id": "9e94f68b-e543-4161-91ec-06f07064dd08",
+	"name": "Servicenow_week1_exercise",
+	"timestamp": "2023-09-12T03:57:31.577Z",
+	"collection_id": "19547367-a19a4546-8b07-4bc7-b292-d6ddbb519bab",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-12T03:57:18.409Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "03569a64-1cdd-42e3-a396-808ed2b6fc72",
+			"name": "retriveall",
+			"url": "https://dev124177.service-now.com/api/now/table/incident?sysparm_limit=1",
+			"time": 1874,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1874
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "461dd5a3-4814-46a2-ae61-e8a46ff04d71",
+			"name": "createid",
+			"url": "https://dev124177.service-now.com/api/now/table/incident",
+			"time": 1647,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1647
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "199c507d-3033-48eb-91a2-db2c80e47e38",
+			"name": "New Request",
+			"url": "https://dev124177.service-now.com/api/now/table/incident/f86a686c471d31100880b7f3846d43f1",
+			"time": 4779,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4779
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a55736f7-19f2-4154-90fe-a0815e20cf8e",
+			"name": "New Request",
+			"url": "https://dev124177.service-now.com/api/now/table/incident/f86a686c471d31100880b7f3846d43f1",
+			"time": 2171,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2171
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "c26fa022-72df-4871-ba13-74056ebd3a98",
+			"name": "patch",
+			"url": "https://dev124177.service-now.com/api/now/table/incident/f86a686c471d31100880b7f3846d43f1",
+			"time": 892,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				892
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 11363,
+	"collection": {
+		"requests": [
+			{
+				"id": "03569a64-1cdd-42e3-a396-808ed2b6fc72",
+				"method": "GET"
+			},
+			{
+				"id": "461dd5a3-4814-46a2-ae61-e8a46ff04d71",
+				"method": "POST"
+			},
+			{
+				"id": "199c507d-3033-48eb-91a2-db2c80e47e38",
+				"method": "GET"
+			},
+			{
+				"id": "a55736f7-19f2-4154-90fe-a0815e20cf8e",
+				"method": "PUT"
+			},
+			{
+				"id": "c26fa022-72df-4871-ba13-74056ebd3a98",
+				"method": "PATCH"
+			}
+		]
+	}
+}
