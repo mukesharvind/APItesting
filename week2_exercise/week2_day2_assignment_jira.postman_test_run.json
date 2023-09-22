@@ -1,0 +1,208 @@
+{
+	"id": "6bbb9291-6fea-4def-907f-1c93438f473a",
+	"name": "week2_day2_assignment_jira",
+	"timestamp": "2023-09-22T16:32:26.982Z",
+	"collection_id": "19547367-5119741e-f535-4bb5-b337-a0c5fe59279f",
+	"folder_id": 0,
+	"environment_id": "19547367-14ad0a6c-1703-42c1-a3f7-8ef7f1b9910a",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-22T16:32:21.678Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "40e56e05-353e-4f17-be5f-4ba32dfa8020",
+			"name": "createid",
+			"url": "https://mukeshtest1.atlassian.net/rest/api/2/issue/",
+			"time": 1144,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1144
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "bd8e5203-7e92-4f36-b693-20068802a171",
+			"name": "Searchid",
+			"url": "https://mukeshtest1.atlassian.net/rest/api/2/issue/10016",
+			"time": 417,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				417
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "806ed095-bb1f-4d50-bbb8-ba92f103601f",
+			"name": "Editid",
+			"url": "https://mukeshtest1.atlassian.net/rest/api/2/issue/10016",
+			"time": 724,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				724
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "66c662f0-c5fa-4a59-8ebb-cd8b965c47a6",
+			"name": "Deleteid",
+			"url": "https://mukeshtest1.atlassian.net/rest/api/2/issue/10016",
+			"time": 834,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				834
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7dc67447-c88c-420d-b63b-7c48d56e8cdb",
+			"name": "Searchall",
+			"url": "https://mukeshtest1.atlassian.net/rest/api/2/search?jql=project=APIproject1",
+			"time": 538,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				538
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "46c7f16e-47c6-4e0c-8d0c-0a462b5aa371",
+			"name": "Listallissue",
+			"url": "https://mukeshtest1.atlassian.net/rest/api/2/issuetype",
+			"time": 311,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				311
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3968,
+	"collection": {
+		"requests": [
+			{
+				"id": "40e56e05-353e-4f17-be5f-4ba32dfa8020",
+				"method": "POST"
+			},
+			{
+				"id": "bd8e5203-7e92-4f36-b693-20068802a171",
+				"method": "GET"
+			},
+			{
+				"id": "806ed095-bb1f-4d50-bbb8-ba92f103601f",
+				"method": "PUT"
+			},
+			{
+				"id": "66c662f0-c5fa-4a59-8ebb-cd8b965c47a6",
+				"method": "DELETE"
+			},
+			{
+				"id": "7dc67447-c88c-420d-b63b-7c48d56e8cdb",
+				"method": "GET"
+			},
+			{
+				"id": "46c7f16e-47c6-4e0c-8d0c-0a462b5aa371",
+				"method": "GET"
+			}
+		]
+	}
+}
